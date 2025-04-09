@@ -2,7 +2,7 @@ body {
     font-family: Helvetica, sans-serif;
     background-color: #f5f5f5;
     margin: 0;
-    padding: 20px;
+    padding: 0px;
 }
 header {
     text-align: center;
@@ -60,4 +60,42 @@ h2 {
     margin: 20px auto; /* Centra la imagen horizontalmente con margen superior e inferior */
     max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
+}
+
+footer {
+    background-color: #25344F;
+    padding: 20px;
+    width: 100%;
+    color: #fffffff7;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex; /* Activa flexbox para organizar las columnas */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    justify-content: space-around; /* Espaciado uniforme */
+    align-items: flex-start; /* Alinea las columnas al inicio */
+    padding: 20px;
+}
+
+.col1, .col2 {
+    flex-basis: 30%; /* Ajusta el ancho de las columnas */
+    text-align: left;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none ;
+    color: #fffffff7;
+}
+
+.menu a:hover {
+    color: #004099;
+    text-decoration: underline;
 }
