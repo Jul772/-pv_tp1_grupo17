@@ -1,35 +1,48 @@
 body {
     font-family: Helvetica, sans-serif;
-    background-color: #f5f5f5;
     margin: 0;
-    padding: 20px;
+    padding: 0px;
+    background: radial-gradient(circle, #D5B893, #25344F);
 }
 
 header{
     text-align: center;
-    background-color: rgb(133, 145, 255);
-    padding: 20px;
-    border-radius: 7px;
+    padding: 30px;
+    border-radius: 5px;
 }
+
+nav {
+    width: 95%;
+    height: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #ffffff76;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-bottom: 20px;
+}
+
 .nav-links {
     list-style: none; 
-    padding: 0; 
+    padding: 10px 15px;
+    font-size: 1.2em; 
     margin: 0; 
-    display: flex; 
-    justify-content: center; 
-    background-color: #9055c0; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
 }
 
 .nav-links li {
-    margin: 0 15px; 
+    margin: 0 10px;
+    list-style-type: none
+    
 }
 
 .nav-links a {
-    text-decoration: none; 
+    text-decoration: none;
+    background-color: #25344F;
     color: #ffffff; 
-    font-size: 1.2em; 
     padding: 10px 15px; 
     transition: background-color 0.3s ease, color 0.3s ease; 
     border-radius: 5px; 
@@ -38,4 +51,59 @@ header{
 .nav-links a:hover {
     background-color: #0056b3; 
     color: #fff; 
+}
+
+#museosej{
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    height: fit-content;
+    padding: 40px;
+    margin-top: 20px;
+    background-color: #ffffff76;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 4rem;
+}
+
+footer {
+    background-color: #25344F;
+    padding: 20px;
+    width: 100%;
+    color: #fffffff7;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex; /* Activa flexbox para organizar las columnas */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    justify-content: space-around; /* Espaciado uniforme */
+    align-items: flex-start; /* Alinea las columnas al inicio */
+    padding: 20px;
+}
+
+.col1 ul, .col2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+    list-style: none;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none ;
+    color: #fffffff7;
+}
+
+.menu a:hover {
+    color: #004099;
+    text-decoration: underline;
 }
