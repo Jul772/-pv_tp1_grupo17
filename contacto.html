@@ -38,29 +38,10 @@
         <textarea placeholder="Mensaje para el Museo seleccionado..."></textarea>
         <button class="btn primary">Enviar</button>
     </div>
-    <!-- Listado de museos
-    <li><a href="https://www.bellasartes.gob.ar/" target="_blank">Museo Nacional de Bellas Artes</a> - Buenos Aires</li>
-    <li><a href="https://www.malba.org.ar/" target="_blank">Museo de Arte Latinoamericano de Buenos Aires (Malba)</a> -
-        Buenos Aires</li>
-    <li><a href="https://www.cabildo.gob.ar/" target="_blank">Museo del Cabildo</a> - Buenos Aires</li>
-    <li><a href="https://www.casaindependencia.gob.ar/" target="_blank">Casa Histórica de la Independencia</a> - Tucumán
-    </li>
-    <li><a href="https://www.museoartemoderno.org/" target="_blank">Museo de Arte Moderno de Buenos Aires</a> - Buenos
-        Aires
-    </li>
-    <li><a href="https://www.museomar.org/" target="_blank">Museo MAR (Mar del Plata)</a> - Mar del Plata</li>
-    <li><a href="https://www.muntref.org/" target="_blank">Muntref - Museo Nacional de la Inmigración</a> - Buenos Aires
-    </li>
-    <li><a href="https://www.museohistoriconorte.gob.ar/" target="_blank">Museo Histórico del Norte</a> - Salta</li>
-    <li><a href="https://www.palaciosanjose.gob.ar/" target="_blank">Palacio San José</a> - Entre Ríos</li>
-    <li><a href="https://www.museosaavedra.gob.ar/" target="_blank">Museo Histórico de Buenos Aires Cornelio
-            Saavedra</a> -
-        Buenos Aires</li>
-        -->
+    
     <style>
         body {
             font-family: Helvetica, sans-serif;
-            background-color: #f5f5f5;
             margin: 0;
             padding: 0px;
             background: radial-gradient(circle, #D5B893, #25344F);
@@ -116,33 +97,6 @@
             padding-bottom: 4rem;
         }
 
-        ul {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .nav-links li {
-            list-style: none;
-            margin: 0 10px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            background-color: #25344F;
-            color: #ffffff;
-            font-size: 1.2em;
-            padding: 10px 15px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            border-radius: 5px;
-        }
-
-        .nav-links a:hover {
-            background-color: #0056b3;
-            color: #fff;
-        }
-
-
         nav {
             width: 95%;
             height: auto;
@@ -153,6 +107,35 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             margin: 0 auto;
             margin-bottom: 20px;
+        }
+
+        .nav-links {
+            padding: 10px 15px;
+            font-size: 1.2em ;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            border-radius: 10px;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+            list-style-type: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            background-color: #25344F;
+            color: #ffffff;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: #0056b3;
+            color: #fff;
         }
 
         select {
@@ -184,16 +167,20 @@
             padding: 20px;
         }
 
-        .col1, .col2 {
-            flex-basis: 30%; /* Ajusta el ancho de las columnas */
-            text-align: center ;
+        .col1 ul, .col2 ul{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            gap: 15px;
+            list-style: none;
         }
 
         .menu{
             list-style: none;
             padding: 0;
             margin: 0;
-        }
+        }  
 
         .menu a {
             text-decoration: none ;
@@ -204,7 +191,7 @@
             color: #004099;
             text-decoration: underline;
         }
-        
+
     </style>
 
 <footer>
