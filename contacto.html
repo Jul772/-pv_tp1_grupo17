@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="css/cont.css">
+
 
 <body>
     <header>
@@ -23,44 +23,200 @@
         <h2>Formulario de contacto</h2>
         <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros. Completa el siguiente
             formulario y nos pondremos en contacto contigo lo antes posible.</p>
-        <p>Seleccione el museo con el que se quiere contactar: </p>
-        <select>
-            <option>Opciones:</option>
-            <option>Museo Nacional de Bellas Artes</option>
-            <option>Museo de Arte Latinoamericano de Buenos Aires (Malba)</option>
-            <option>Museo del Cabildo</option>
-            <option>Casa Histórica de la Independencia</option>
-            <option>Museo de Arte Moderno de Buenos Aires</option>
-            <option>Museo MAR (Mar del Plata)</option>
-            <option>Museo Nacional de la Inmigración</option>
-            <option>Museo Histórico del Norte</option>
-            <option>Palacio San José</option>
-            <option>Museo Histórico de Buenos Aires Cornelio Saavedra</option>
-        </select>
+        <p>Seleccione el museo con el que se quiere contactar: <select name="" id="">
+                <option value="">Opciones:</option>
+                <option value="">Museo Nacional de Bellas Artes</option>
+                <option value="">Museo de Arte Latinoamericano de Buenos Aires (Malba)</option>
+                <option value="">Museo del Cabildo</option>
+                <option value="">Casa Histórica de la Independencia</option>
+                <option value="">Museo de Arte Moderno de Buenos Aires</option>
+                <option value="">Museo MAR (Mar del Plata)</option>
+                <option value="">Museo Nacional de la Inmigración</option>
+                <option value="">Museo Histórico del Norte</option>
+                <option value="">Palacio San José</option>
+                <option value="">Museo Histórico de Buenos Aires Cornelio Saavedra</option>
+            </select></p>
         <textarea placeholder="Mensaje para el Museo seleccionado..."></textarea>
         <button class="btn primary">Enviar</button>
     </div>
-    <footer>
-        <div class="container">
-            <div class="col1">
-                <h3>Enlaces</h3>
-                <ul class="menu">
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <div class="col2">
-                <h3>Redes Sociales</h3>
-                <ul class="menu">
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">GitHub</a></li>
-                </ul>
-            </div>
+    
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0px;
+            background: radial-gradient(circle, #D5B893, #25344F);
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        textarea {
+            color: #0000008f;
+            width: 85%;
+            height: 150px;
+            padding: 12px 20px;
+            border-radius: 4px;
+            background-color: transparent;
+            font-size: 16px;
+            margin-bottom: 20px;
+
+
+        }
+
+        .btn {
+            float: right;
+            border: none;
+            color: black;
+            padding: 14px 28px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .primary {
+            background-color: #617891;
+            border: 2px solid #25344F;
+        }
+
+        .primary:hover {
+            background: #0b7dda;
+            color: white;
+        }
+
+        #formulario {
+            flex-direction: column;
+            margin: 0 auto;
+            width: 90%;
+            height: fit-content;
+            padding: 40px;
+            background-color: #ffffff76;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding-bottom: 4rem;
+        }
+
+        nav {
+            width: 95%;
+            height: auto;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            background-color: #ffffff76;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            padding: 10px 15px;
+            font-size: 1.2em ;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            border-radius: 10px;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+            list-style-type: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            background-color: #25344F;
+            color: #ffffff;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        select {
+            background-color: transparent;
+            border: none;
+            padding: 0 1em 0 0;
+            margin: 0;
+            width: 100%;
+            font-family: inherit;
+            font-size: inherit;
+            cursor: inherit;
+            line-height: inherit;
+            color:#004099;
+        }
+
+        footer {
+            background-color: #25344F;
+            padding: 20px;
+            width: 100%;
+            color: #fffffff7;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex; /* Activa flexbox para organizar las columnas */
+            flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+            justify-content: space-around; /* Espaciado uniforme */
+            align-items: flex-start; /* Alinea las columnas al inicio */
+            padding: 20px;
+        }
+
+        .col1 ul, .col2 ul{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            gap: 15px;
+            list-style: none;
+        }
+
+        .menu{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }  
+
+        .menu a {
+            text-decoration: none ;
+            color: #fffffff7;
+        }
+
+        .menu a:hover {
+            color: #004099;
+            text-decoration: underline;
+        }
+
+    </style>
+
+<footer>
+    <div class="container">
+        <div class="col1">
+            <h3>Enlaces</h3>
+            <ul class="menu">
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
         </div>
-        <p>© 2025 Cultura de Argentina. Todos los derechos reservados.</p>
-    </footer>
+        <div class="col2">
+            <h3>Redes Sociales</h3>
+            <ul class="menu">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+    <p>© 2025 Cultura de Argentina. Todos los derechos reservados.</p>
+</footer>
 </body>
 
 </html>
